@@ -4,3 +4,5 @@ A function which performs exact rate ratio tests and returns an object of
 class htest.
 
 Run the script ``rateratio.py`` without argument to get the full document.
+
+This script depends on scipy.
