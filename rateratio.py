@@ -1,11 +1,12 @@
 #!/usr/bin/env python
 docstring='''
-rateratio.test\tAn Exact Rate Ratio Test Assuming Poisson Counts
+rateratio.test: An Exact Rate Ratio Test Assuming Poisson Counts
 
 Description
-    Performs the uniformy most powerful unbiased test on the ratio of rates
-    of two Poisson counts with given time (e.g., perons-years) at risk for
-    each count.
+    Performs the uniformly most powerful unbiased test on the ratio of rates
+    of two Poisson counts with given time (e.g., persons-years) at risk for
+    each count. This module is a python re-implement of the rateratio.test
+    R package.
 
 Usage
     from rateratio import test as rateratio_test
