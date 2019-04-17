@@ -1,4 +1,4 @@
-## rateratio.test: An Exact Rate Ratio Test Assuming Poisson Counts ###
+## rateratio.test: An Exact Rate Ratio Test Assuming Poisson Counts ##
 
 #### Description ####
 Performs the uniformly most powerful unbiased test on the ratio of rates
