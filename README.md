@@ -46,10 +46,10 @@ confidence interval consistency of inferences, see Fay (2010).
     data_name       description of data
 
 #### References ####
-    Fay, M. P. (2010). Two-sided exact tests and matching confidence
-        intervals for discrete data. R Journal, 2(1), 53-58.
-    Lehmann, E.L. (1986). Testing Statistical Hypotheses (second edition).
-        Wadsworth and Brooks/Cole, Pacific Grove, California. }
+* Fay, M. P. (2010). Two-sided exact tests and matching confidence
+  intervals for discrete data. R Journal, 2(1), 53-58.
+* Lehmann, E.L. (1986). Testing Statistical Hypotheses (second edition).
+  Wadsworth and Brooks/Cole, Pacific Grove, California.
 
 #### Examples ####
 The following python code
