@@ -39,14 +39,14 @@ confidence interval consistency of inferences, see Fay (2010).
 #### Value ####
 An object of class "htest" containing the following components:
 ```
-    p_value         the p-value of the test
-    estimate        a vector with the rate ratio and the two individual rates
-    null_value      the null rate ratio (two.sided) or the rate ratio on
-                    boundary between null and alternative
-    conf_int        confidence interval
-    alternative     type of alternative hypothesis
-    methods         description of method
-    data_name       description of data
+p_value         the p-value of the test
+estimate        a vector with the rate ratio and the two individual rates
+null_value      the null rate ratio (two.sided) or the rate ratio on
+                boundary between null and alternative
+conf_int        confidence interval
+alternative     type of alternative hypothesis
+methods         description of method
+data_name       description of data
 ```
 
 #### References ####
