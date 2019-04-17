@@ -16,15 +16,17 @@ rateratio_test(x, n, RR = 1,
 ```
 
 #### Arguments ####
-    x               a vector of length 2 with counts for the two rates
-    n               a vector of length 2 with time at risk in each rate
-    RR              the null rate ratio (two.sided) or the rate ratio on
-                    boundary between null and alternative
-    alternative     a character string specifying the alternative hypothesis,
-                    must be one of "two.sided" (default), "greater" or
-                    "less".  You can specify just the initial letter.
-    conf_level      confidence level of the returned confidence interval.
-                    Must be a single number between 0 and 1.
+```
+x               a vector of length 2 with counts for the two rates
+n               a vector of length 2 with time at risk in each rate
+RR              the null rate ratio (two.sided) or the rate ratio on
+                boundary between null and alternative
+alternative     a character string specifying the alternative hypothesis,
+                must be one of "two.sided" (default), "greater" or
+                "less".  You can specify just the initial letter.
+conf_level      confidence level of the returned confidence interval.
+                Must be a single number between 0 and 1.
+```
 
 #### Details ####
 The rateratio.test tests whether the ratio of the first rate (estimated
@@ -35,7 +37,8 @@ See Lehmann (1986, p. 152). For full discussion of the p-value and
 confidence interval consistency of inferences, see Fay (2010).
 
 #### Value ####
-    An object of class "htest" containing the following components:
+An object of class "htest" containing the following components:
+```
     p_value         the p-value of the test
     estimate        a vector with the rate ratio and the two individual rates
     null_value      the null rate ratio (two.sided) or the rate ratio on
@@ -44,6 +47,7 @@ confidence interval consistency of inferences, see Fay (2010).
     alternative     type of alternative hypothesis
     methods         description of method
     data_name       description of data
+```
 
 #### References ####
 * Fay, M. P. (2010). Two-sided exact tests and matching confidence
