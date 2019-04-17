@@ -1,12 +1,13 @@
 ## rateratio.test: An Exact Rate Ratio Test Assuming Poisson Counts ###
 
-##### Description #####
+#### Description ####
 Performs the uniformly most powerful unbiased test on the ratio of rates
 of two Poisson counts with given time (e.g., persons-years) at risk for
-each count. This module is a python re-implement of the rateratio.test
+each count. This module is a python re-implement of the 
+[rateratio.test](https://cran.r-project.org/package=rateratio.test)
 R package.
 
-##### Usage #####
+#### Usage ####
 ```python
 from rateratio import test as rateratio_test
 rateratio_test(x, n, RR = 1, 
@@ -14,7 +15,7 @@ rateratio_test(x, n, RR = 1,
     conf_level = 0.95)
 ```
 
-##### Arguments #####
+#### Arguments ####
     x               a vector of length 2 with counts for the two rates
     n               a vector of length 2 with time at risk in each rate
     RR              the null rate ratio (two.sided) or the rate ratio on
@@ -25,7 +26,7 @@ rateratio_test(x, n, RR = 1,
     conf_level      confidence level of the returned confidence interval.
                     Must be a single number between 0 and 1.
 
-##### Details #####
+#### Details ####
 The rateratio.test tests whether the ratio of the first rate (estimated
 by x[0]/n[0] over the second rate (estimated by x[1]/n[1]) is either
 equal to, less, or greater than RR. The two-sided p-value is defined as
@@ -33,7 +34,7 @@ either 1 or twice the minimum of the one-sided p-values.
 See Lehmann (1986, p. 152). For full discussion of the p-value and
 confidence interval consistency of inferences, see Fay (2010).
 
-##### Value #####
+#### Value ####
     An object of class "htest" containing the following components:
     p_value         the p-value of the test
     estimate        a vector with the rate ratio and the two individual rates
