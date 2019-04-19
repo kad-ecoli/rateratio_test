@@ -17,14 +17,14 @@ rateratio_test(x, n, RR = 1,
 
 #### Arguments ####
 ```
-x               a vector of length 2 with counts for the two rates
-n               a vector of length 2 with time at risk in each rate
-RR              the null rate ratio (two.sided) or the rate ratio on
-                boundary between null and alternative
-alternative     a character string specifying the alternative hypothesis,
+x               A vector of length 2 with counts for the two rates.
+n               A vector of length 2 with time at risk in each rate.
+RR              The null rate ratio (two.sided) or the rate ratio on
+                boundary between null and alternative.
+alternative     A character string specifying the alternative hypothesis,
                 must be one of "two.sided" (default), "greater" or
                 "less".  You can specify just the initial letter.
-conf_level      confidence level of the returned confidence interval.
+conf_level      Confidence level of the returned confidence interval.
                 Must be a single number between 0 and 1.
 ```
 
@@ -39,14 +39,15 @@ confidence interval consistency of inferences, see Fay (2010).
 #### Value ####
 An object of class "htest" containing the following components:
 ```
-p_value         the p-value of the test
-estimate        a vector with the rate ratio and the two individual rates
+p_value         The p-value of the test.  Due to numerical restriction,
+                the smallest p-value that can be returned is 2.22E-16.
+estimate        A vector with the rate ratio and the two individual rates
 null_value      the null rate ratio (two.sided) or the rate ratio on
-                boundary between null and alternative
-conf_int        confidence interval
-alternative     type of alternative hypothesis
-methods         description of method
-data_name       description of data
+                boundary between null and alternative.
+conf_int        Confidence interval.
+alternative     Type of alternative hypothesis.
+methods         Description of method.
+data_name       Description of data.
 ```
 
 #### References ####
