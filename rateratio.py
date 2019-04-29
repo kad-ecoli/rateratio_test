@@ -127,16 +127,11 @@ def test(x, n, RR = 1, alternative = "two.sided", conf_level = 0.95):
     '''
     # modify checks from prop.test
     k = len(x)
-    if k != 2:
-        raise("x must have a length 2")
-    if k != len(n):
-        raise("'x' and 'n' must have the same length")
-    if min(n) <= 0:
-        raise("elements of 'n' must be positive")
-    if min(x) < 0:
-        raise("elements of 'x' must be nonnegative")
-    if RR <= 0:
-        raise("RR must be greater than 0")
+    assert(k == 2),     "x must have a length 2"
+    assert(k == len(n)),"'x' and 'n' must have the same length"
+    assert(min(n) > 0), "elements of 'n' must be positive"
+    assert(min(x) >= 0),"elements of 'x' must be nonnegative"
+    assert(RR > 0),     "RR must be greater than 0"
     
     #alternative <- match.arg(alternative)
     if   alternative == "t" or alternative == "two_sided":
@@ -145,12 +140,12 @@ def test(x, n, RR = 1, alternative = "two.sided", conf_level = 0.95):
         alternative = "greater"
     elif alternative == "l":
         alternative = "less"
-    if not alternative in ("two.sided","less","greater"):
-        raise('''Error in match.arg(alternative) : 
-  'arg' should be one of "two.sided", "less", "greater"''')
+    assert(alternative in ("two.sided","less","greater")
+        ),'''Error in match.arg(alternative) : 
+  'arg' should be one of "two.sided", "less", "greater"'''
 
-    if conf_level <= 0 or conf_level >= 1:
-        raise("'conf.level' must be a single number between 0 and 1")
+    assert(conf_level >0 and conf_level < 1
+        ),"'conf.level' must be a single number between 0 and 1"
 
     RVAL=htest(x, n, RR, alternative)
 
