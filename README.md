@@ -51,8 +51,8 @@ data_name       Description of data.
 ```
 
 #### References ####
-* Fay, M. P. (2010). Two-sided exact tests and matching confidence
-  intervals for discrete data. R Journal, 2(1), 53-58.
+* Fay, M. P. (2010). [Two-sided exact tests and matching confidence
+  intervals for discrete data](https://doi.org/10.32614/RJ-2010-008). R Journal, 2(1), 53-58.
 * Lehmann, E.L. (1986). Testing Statistical Hypotheses (second edition).
   Wadsworth and Brooks/Cole, Pacific Grove, California.
 
