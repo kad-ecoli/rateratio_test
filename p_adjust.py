@@ -49,7 +49,7 @@ References
         57, 289-300.
 
 Examples
-    from p_adjust import adjust as p_adjust
+    from p_adjust import p_adjust
     p_adjust([0.03,0.2,0.4], method="fdr")
 '''
 
