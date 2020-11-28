@@ -101,9 +101,9 @@ def p_adjust(p, method="fdr", n=None):
         # evaluate pi0 for different lambdas
         pi0 = []
         lam = np.arange(0, 0.90, 0.01)
-        counts = np.array([(p > i).sum() for i in sp.arange(0, 0.9, 0.01)])
+        counts = np.array([(p > i).sum() for i in np.arange(0, 0.9, 0.01)])
         for l in range(len(lam)):
-            pi0.append(counts[l]/(m*(1-lam[l])))
+            pi0.append(counts[l]/(n*(1-lam[l])))
 
         pi0 = np.array(pi0)
 
