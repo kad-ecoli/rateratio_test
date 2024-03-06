@@ -52,8 +52,8 @@ data_name       Description of data.
 
 #### References ####
 * Wei, X., Zhang, C., Freddolino, P. L., & Zhang, Y. (2020).
-  Detecting Gene Ontology misannotations using taxon-specific rate ratio
-  comparisons. Bioinformatics, 36(16), 4383-4388.
+  [Detecting Gene Ontology misannotations using taxon-specific rate ratio
+  comparisons](https://doi.org/10.1093/bioinformatics/btaa548). Bioinformatics, 36(16), 4383-4388.
 * Fay, M. P. (2010). [Two-sided exact tests and matching confidence
   intervals for discrete data](https://doi.org/10.32614/RJ-2010-008). R Journal, 2(1), 53-58.
 
